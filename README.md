@@ -1,17 +1,7 @@
 ![MonoheadLogo](https://i.postimg.cc/WpSKVCPz/Monoforge.png)
 
-Monoforge is a crafting calulator website that shows you the materials needed to crafting something with and how many you'll need, best of all Monoforge is a open-source project that anyone can view. 
-
+Monoforge is a crafting calculator website created for members of the Monolith Servers community to utilize, with Monoforge you can see how many materials is needed to craft a specific item, with the option to set a quantity so you know exactly how many materials will be needed. 
 
 ## Issue Reporting & Feedbacks
 
 Please utilize the [Issues](https://github.com/Jetaime-Alexandria/Monoforge/issues) tab and submit any bug-reports, suggestions or feedback via there.
-
-## Wish to contribute?
-You're more than welcome to fork this repository, and make changes to it, just make a pull-request when you've made changes and I'll review them and implement them in. 
-
-- Ensure you have **Git**, you can [download it via here](https://git-scm.com/).
-- Type `git clone https://github.com/Jetaime-Alexandria/Monoforge.git`
-- Start working! 
-
-
