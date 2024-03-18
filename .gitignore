@@ -1,2 +1,5 @@
 # .vscode stuff
 /.vscode/
+
+# Third Party (Not distributable)
+/fonts/fontawesome/
