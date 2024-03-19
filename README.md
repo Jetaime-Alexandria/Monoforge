@@ -14,6 +14,8 @@ There's three different ways you can contribute to this project.
 - Post your suggestion in the Suggestions channel on the [Jet0751 Discord](https://discord.gg/edkEF69y6k).
 - Or just clone the repo, make changes yourself, then make a pull-request afterwards.
 
+If you use VSCode, I recommend using an extension like [Live Server](https://marketplace.visualstudio.com/items?itemName=yandeu.five-server) so you can preview your changes locally.
+
 ## How accurate is this Crafting Calculator?
 I don't personally craft things myself, but I'd like to think this project is accurate, if it's not accurate, then follow the steps above and help contribute to this project, add new features, correct information, whatever you wish to do to help improve this project.
 
