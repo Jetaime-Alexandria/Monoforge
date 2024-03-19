@@ -6,6 +6,26 @@
     <title>Monoforge</title>
 </head>
 <body>
-    
+    <span>Latest Commit: <a id="commit"></a></span>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $.ajax({
+            type: "GET",
+            url: "https://api.github.com/repos/Jetaime-Alexandria/Monoforge/commits/preview",
+            headers: {
+                Accept: "application/vnd.github.v3+json"
+            },
+            success: function(response) {
+                console.log(response);
+                $("#commit").text(response.sha.slice(0, 7));
+                $("#commit").attr("href", response.html_url);
+            },
+            error: function(xhr, textStatus, errorThrown) {
+                $("#commit").text("Unknown");
+                console.log("Error:", xhr.responseText);
+            }
+        });
+    </script>    
 </body>
 </html>
