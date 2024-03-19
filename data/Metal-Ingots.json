@@ -1,0 +1,91 @@
+[
+  {
+    "section_name": "Metal Ingots",
+    "section_items": [
+      {
+        "unique_id" : "copper_bar",
+        "name": "Copper Bar",
+        "skill": "Metalworking",
+        "level": 1,
+        "ingredients": [
+          {
+            "name": "Copper Ore",
+            "amount": 2
+          }
+        ]
+      },
+      {
+        "unique_id" : "iron_bar",
+        "name": "Iron Bar",
+        "skill": "Metalworking",
+        "level": 14,
+        "ingredients": [
+          {
+            "name": "Iron Ore",
+            "amount": 2
+          }
+        ]
+      },
+      {
+        "unique_id" : "steel_bar",
+        "name": "Steel Bar",
+        "skill": "Metalworking",
+        "level": 25,
+        "ingredients": [
+          {
+            "name": "Iron Bar",
+            "amount": 2
+          }
+        ]
+      },
+      {
+        "unique_id" : "aluminium_bar",
+        "name": "Aluminum Bar",
+        "skill": "Metalworking",
+        "level": 32,
+        "ingredients": [
+          {
+            "name": "Aluminum Ore",
+            "amount": 2
+          }
+        ]
+      },
+      {
+        "unique_id" : "silver_bar",
+        "name" : "Silver Bar",
+        "skill": "Metalworking",
+        "level": 40,
+        "ingredients": [
+          {
+            "name": "Silver Ore",
+            "amount": 2
+          }
+        ]
+      },
+      {
+        "unique_id" : "gold_bar",
+        "name" : "Gold Bar",
+        "skill": "Metalworking",
+        "level": 60,
+        "ingredients": [
+          {
+            "name": "Gold Ore",
+            "amount": 2
+          }
+        ]
+      },
+      {
+        "unique_id" : "titanium_bar",
+        "name" : "Titanium Bar",
+        "skill": "Metalworking",
+        "level": 80,
+        "ingredients": [
+          {
+            "name": "Titanium Ore",
+            "amount": 2
+          }
+        ]
+      }
+    ]
+  }
+]
