@@ -1,0 +1,35 @@
+[
+    {
+        "section_name" : "Tools",
+        "section_items" : [
+            {
+                "unique_id" : "harden_drill",
+                "name" : "Harden Drill",
+                "skill" : "Crafting",
+                "level" : 50,
+                "ingredients" : [
+                    {
+                        "name" : "Silver Bar",
+                        "amount" : 5
+                    },
+                    {
+                        "name" : "Diamond",
+                        "amount" : 1
+                    },
+                    {
+                        "name" : "Copper Bar",
+                        "amount" : 10
+                    },
+                    {
+                        "name" : "Steel Bar",
+                        "amount" : 10
+                    },
+                    {
+                        "name" : "Circut Board",
+                        "amount" : 1
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,155 @@
+[
+  {
+    "section_name": "Weapons",
+    "section_items": [
+      {
+        "unique_id" : "makarov",
+        "name": "Makarov",
+        "type": "Pistol",
+        "ammo": "9x18mm",
+        "skill" : "Crafting",
+        "level": 5,
+        "ingredients": [
+          {
+            "name": "Copper Bar",
+            "amount": 8
+          },
+          {
+            "name": "Iron Bar",
+            "amount": 5
+          },
+          {
+            "name": "Pistol Parts",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "unique_id" : "m1911",
+        "name": "M1911",
+        "type": "Pistol",
+        "ammo": ".45 ACP",
+        "skill" : "Crafting",
+        "level": 12,
+        "ingredients": [
+          {
+            "name": "Copper Bar",
+            "amount": 8
+          },
+          {
+            "name": "Iron Bar",
+            "amount": 6
+          },
+          {
+            "name": "Pistol Parts",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "unique_id" : "p99",
+        "name": "P99",
+        "type": "Pistol",
+        "ammo": "9x19mm",
+        "skill" : "Crafting",
+        "level": 15,
+        "ingredients": [
+          {
+            "name": "Copper Bar",
+            "amount": 8
+          },
+          {
+            "name": "Iron Bar",
+            "amount": 8
+          },
+          {
+            "name": "Pistol Parts",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "unique_id" : "five-seven",
+        "name": "FN Five-Seven",
+        "type": "Pistol",
+        "ammo": "5.7x28mm",
+        "skill" : "Crafting",
+        "level": 18,
+        "ingredients": [
+          {
+            "name": "Copper Bar",
+            "amount": 7
+          },
+          {
+            "name": "Pistol Parts",
+            "amount": 1
+          },
+          {
+            "name": "Iron Bar",
+            "amount": 9
+          },
+          {
+            "name": "Steel Bar",
+            "amount": 2
+          }
+        ]
+      },
+      {
+        "unique_id" : "mr96",
+        "name": "MR96",
+        "type": "Pistol",
+        "ammo": ".44 Magnum Rounds",
+        "skill" : "Crafting",
+        "level": 20,
+        "ingredients": [
+          {
+            "name": "Copper Bar",
+            "amount": 8
+          },
+          {
+            "name": "Pistol Parts",
+            "amount": 1
+          },
+          {
+            "name": "Iron Bar",
+            "amount": 5
+          },
+          {
+            "name": "Steel Bar",
+            "amount": 5
+          }
+        ]
+      },
+      {
+        "unique_id" : "mac11",
+        "name": "Mac-11",
+        "type": "Machine Gun",
+        "ammo": "9x17mm",
+        "skill" : "Crafting",
+        "level": 20,
+        "ingredients": [
+          {
+            "name": "Silver Bar",
+            "amount": 2
+          },
+          {
+            "name": "Scrap Metal",
+            "amount": 5
+          },
+          {
+            "name": "Copper Bar",
+            "amount": 9
+          },
+          {
+            "name": "Iron Bar",
+            "amount": 10
+          },
+          {
+            "name": "Pistol Parts",
+            "amount": 1
+          }
+        ]
+      }
+    ]
+  }
+]
