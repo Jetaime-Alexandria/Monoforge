@@ -1,7 +1,7 @@
 on: 
   push: 
     branches:
-       - main
+       - preview
 name: 🚀 Deploy to Monoforge Preview
 jobs:
   web-deploy:
