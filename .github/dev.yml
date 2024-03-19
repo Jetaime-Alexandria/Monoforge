@@ -1,0 +1,28 @@
+on: 
+  push: 
+    branches:
+       - main
+name: 🚀 Deploy to Monoforge Preview
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 📢 Push to Discord
+      uses: Sniddl/discord-commits@v1.6
+      with:
+       webhook: ${{ secrets.DiscordWebhook }}
+       template: "plain-author"
+       message: "A new commit was pushed to Monoforge"
+       embed: '{ "title": "", "description": "**{{commit.title}}**\n`{{ github.context.payload.repository.owner.name }}/{{ github.context.payload.repository.name}}` on branch **${{github.ref_name}}**", "author": { "name": "{{commit.author.name}}" }}'
+
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v3
+    
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ftpupload.net
+        username: ${{ secrets.ftp_username }}
+        password: ${{ secrets.ftp_password }}
+        server-dir: /monoforge-preview.monohead.dev/htdocs/
