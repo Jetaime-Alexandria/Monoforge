@@ -4,6 +4,8 @@
 
 Monoforge is a crafting calculator website created for members of the Monolith Servers community to utilize, with Monoforge you can see how many materials is needed to craft a specific item, with the option to set a quantity so you know exactly how many materials will be needed. 
 
+Has light & dark mode built in, it switches depending on the devices light or dark mode settings.
+
 ## How is this website built.
 This website is just plain HTML, with mixture of Javascript & JQuery, I use FontAwesome for the Icons you see on the website, and TailwindCSS for the style & design. 
 
