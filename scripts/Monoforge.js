@@ -23,9 +23,9 @@ weapons = fetch("data/Weapons.json")
   .then((data) => {
     data[0].section_items.forEach((element) => {
       let item_html = `
-        <li class="p-2 m-2 bg-gray-300 dark:bg-gray-700 hover:bg-gray-400 dark:hover:bg-gray-600 flex items-center space-x-4">
+        <li class="p-2 m-2 bg-gray-300 dark:bg-gray-700 hover:bg-gray-400 dark:hover:bg-gray-600  items-center space-x-4">
          <img src="./assets/Weapons/${element.unique_id}.png" alt="${element.name}" class="lines p-2 w-16 h-16 ${WeaponTypeCSS(element.type)}">
-         <span class="text-dark dark:text-gray-300 font-bold text-xl"><b>${element.name}</b><br><span class="text-sm">Req: ${element.skill} ${element.level}</span></span>
+         <span class="text-dark dark:text-gray-300 font-bold text-xl"><b>${element.name}</b><span class="text-sm float-right">Req: ${element.skill} ${element.level}</span></span>
         </li>`;
 
       document
