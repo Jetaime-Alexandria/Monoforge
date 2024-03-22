@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monoforge</title>
+    <!-- Add FontAwesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Add TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "media"
+        }
+    </script>
+    <style>
+        .weapon-list {
+            display: none;
+        }
+        .category:checked ~ .weapon-list {
+            display: block;
+        }
+
+        .drop-on-death {
+            background-image: url('./assets/strike-through.png');
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white min-h-screen">
+    <!-- Header -->
+    <header class="bg-gray-200 dark:bg-gray-800">
+        <div class="container mx-auto p-4">
+            <a href="/" class="flex items-center justify-center space-x-2">
+                <h1 class="text-3xl font-bold">Mono<span class="text-red-500">Forge</span></h1>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto my-8">
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    
+            <div class="bg-gray-200 dark:bg-gray-800 rounded-lg p-6 col-span-1">
+                <h2 class="text-2xl font-bold mb-4">Weapon Categories</h2>
+                <hr class="my-4 border-gray-300 dark:border-gray-700">
+                <ul class="grid grid-cols-1 gap-6">
+                    <li><input type="radio" class="category bg-gray-100 dark:bg-gray-700 focus:ring-0 focus:ring-offset-0 MFSelectors" id="AllWeapons" checked> <label for="AllWeapons" class="text-gray-700 dark:text-gray-300 ml-2 text-xl">All Weapons</label></li>
+                    <li><input type="radio" class="category bg-gray-100 dark:bg-gray-700 MFSelectors" id="Sub-Machine"> <label for="Sub-Machine" class="text-gray-700 dark:text-gray-300 ml-2 text-xl">Primaries</label></li>
+                    <li><input type="radio" class="category bg-gray-100 dark:bg-gray-700 MFSelectors" id="Automatic"> <label for="Automatic" class="text-gray-700 dark:text-gray-300 ml-2 text-xl">Secondaries</label></li>
+                    <li><input type="radio" class="category bg-gray-100 dark:bg-gray-700 MFSelectors" id="Melees"> <label for="Melees" class="text-gray-700 dark:text-gray-300 ml-2 text-xl">Melees</label></li>
+                </ul>
+            </div>
+    
+            <div class="col-span-2">
+                <div class="bg-gray-200 dark:bg-gray-700 rounded-lg p-6 grid grid-cols-1 md:grid-cols-3 gap-6 mb-4">
+                    <input type="text" class="bg-gray-300 dark:bg-gray-600 rounded-lg p-2 w-full text-gray-700 dark:text-gray-300" placeholder="Search...">
+                    <button class="bg-gray-300 dark:bg-gray-600 dark:hover:bg-gray-500 hover:bg-gray-400 rounded-lg p-2 w-full text-gray-700 dark:text-gray-300">Search Item</button>
+                    <button class="bg-gray-300 dark:bg-gray-600 dark:hover:bg-gray-500 hover:bg-gray-400 rounded-lg p-2 w-full text-gray-700 dark:text-gray-300">Reset Search</button>
+                </div>
+                <div class="bg-gray-200 dark:bg-gray-700 rounded-lg p-6 grid grid-cols-1 md:grid-cols-3 gap-6" id="weapon-list">
+                     
+                </div>
+            </div>
+    
+        </div>
+    
+    </main>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="/scripts/Monoforge.js"></script>
+</body>
+
+</html>
