@@ -15,12 +15,13 @@
             darkMode: "media"
         }
     </script>
-    
+
     <style>
         .weapon-list {
             display: none;
         }
-        .category:checked ~ .weapon-list {
+
+        .category:checked~.weapon-list {
             display: block;
         }
 
@@ -44,33 +45,59 @@
     <main class="container mx-auto my-8">
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-    
+
             <div class="bg-gray-200 dark:bg-gray-800 rounded-lg p-6 col-span-1">
-                <h2 class="text-2xl font-bold mb-4">Weapon Categories</h2>
+                <h2 class="text-2xl font-bold mb-4">Filter List</h2>
                 <hr class="my-4 border-gray-300 dark:border-gray-700">
-                <ul class="grid grid-cols-1 gap-6">
-                    <li><input type="radio" class="category bg-gray-100 dark:bg-gray-700 focus:ring-0 focus:ring-offset-0 MFSelectors" id="AllWeapons" checked> <label for="AllWeapons" class="text-gray-700 dark:text-gray-300 ml-2 text-xl">All Weapons</label></li>
-                    <li><input type="radio" class="category bg-gray-100 dark:bg-gray-700 MFSelectors" id="Primaries"> <label for="Primaries" class="text-gray-700 dark:text-gray-300 ml-2 text-xl">Primaries</label></li>
-                    <li><input type="radio" class="category bg-gray-100 dark:bg-gray-700 MFSelectors" id="Secondaries"> <label for="Secondaries" class="text-gray-700 dark:text-gray-300 ml-2 text-xl">Secondaries</label></li>
-                    <li><input type="radio" class="category bg-gray-100 dark:bg-gray-700 MFSelectors" id="Melees"> <label for="Melees" class="text-gray-700 dark:text-gray-300 ml-2 text-xl">Melees</label></li>
+                <ul class="grid grid-cols-1 gap-3">
+                    <li>
+                        <input type="checkbox" name="Secondary" id="Secondary" class="category mr-2 w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" checked>
+                        <label for="Secondary" class="text-gray-700 dark:text-gray-300"><b class="text-blue-600 dark:text-blue-500">Primary</b> Weapons.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="Primary" id="Primary" class="category mr-2 w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" checked>
+                        <label for="Primary" class="text-gray-700 dark:text-gray-300"><b class="text-orange-600 dark:text-orange-500">Secondary</b> Weapons.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="Melee" id="Melee" class="category mr-2 w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" checked>
+                        <label for="Melee" class="text-gray-700 dark:text-gray-300"><b class="text-red-600 dark:text-red-500">Melee</b> Weapons.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="Blueprint" id="Blueprint" class="category mr-2 w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" checked>
+                        <label for="Blueprint" class="text-gray-700 dark:text-gray-300"><b class="text-blue-700 dark:text-blue-300"><i class="fas fa-scroll"></i> Blueprint</b> Weapons.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="Exotics" id="Exotics" class="category mr-2 w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" checked>
+                        <label for="Exotics" class="text-gray-700 dark:text-gray-300"><b class="text-yellow-700 dark:text-yellow-400"><i class="fas fa-wrench"></i> High-Tech</b> Weapons.</label>
+                    </li>
+                </ul>
+                <ul class="mt-4 grid grid-cols-1 gap-3">
+                  
                 </ul>
             </div>
-    
+
             <div class="col-span-2">
                 <div class="bg-gray-200 dark:bg-gray-700 rounded-lg p-6 grid grid-cols-1 md:grid-cols-3 gap-6 mb-4">
-                    <input type="text" class="bg-gray-300 dark:bg-gray-600 rounded-lg p-2 w-full text-gray-700 dark:text-gray-300" placeholder="Search...">
-                    <button class="bg-gray-300 dark:bg-gray-600 dark:hover:bg-gray-500 hover:bg-gray-400 rounded-lg p-2 w-full text-gray-700 dark:text-gray-300">Search Item</button>
-                    <button class="bg-gray-300 dark:bg-gray-600 dark:hover:bg-gray-500 hover:bg-gray-400 rounded-lg p-2 w-full text-gray-700 dark:text-gray-300">Reset Search</button>
+                    <input type="text"
+                        class="bg-gray-300 dark:bg-gray-600 rounded-lg p-2 w-full text-gray-700 dark:text-gray-300"
+                        placeholder="Search...">
+                    <button
+                        class="bg-gray-300 dark:bg-gray-600 dark:hover:bg-gray-500 hover:bg-gray-400 rounded-lg p-2 w-full text-gray-700 dark:text-gray-300">Search
+                        Item</button>
+                    <button
+                        class="bg-gray-300 dark:bg-gray-600 dark:hover:bg-gray-500 hover:bg-gray-400 rounded-lg p-2 w-full text-gray-700 dark:text-gray-300">Reset
+                        Search</button>
                 </div>
-                <div class="bg-gray-200 dark:bg-gray-700 rounded-lg p-6 grid grid-cols-1 md:grid-cols-3 gap-6" id="weapon-list">
-                     
+                <div class="bg-gray-200 dark:bg-gray-700 rounded-lg p-6 grid grid-cols-1 md:grid-cols-3 gap-6"
+                    id="weapon-list">
+
                 </div>
             </div>
-    
+
         </div>
-    
+
     </main>
-    
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script src="/scripts/Monoforge.js"></script>

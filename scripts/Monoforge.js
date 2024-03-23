@@ -32,11 +32,29 @@ weapons = fetch("data/Weapons.json")
         .querySelector("#weapon-list")
         .insertAdjacentHTML("beforeend", item_html);
     });
+
   })
   .catch((error) => console.error(error));
 
-document.querySelectorAll(".MFSelectors").forEach((element) => {
-  element.addEventListener("click", () => {
-    
-  });
-})
+  document.addEventListener("DOMContentLoaded", function () {
+    const categoryCheckboxes = document.querySelectorAll(".category");
+
+    categoryCheckboxes.forEach(function (checkbox) {
+        checkbox.addEventListener("change", function () {
+            const weaponList = document.getElementById("weapon-list");
+            const weapons = weaponList.querySelectorAll("[data-weapon-type]");
+            const selectedCategories = Array.from(categoryCheckboxes)
+                .filter(checkbox => checkbox.checked)
+                .map(checkbox => checkbox.name);
+
+            weapons.forEach(function (weapon) {
+                const weaponType = weapon.dataset.weaponType;
+                if (selectedCategories.includes("All") || selectedCategories.includes(weaponType)) {
+                    weapon.classList.remove("hidden");
+                } else {
+                    weapon.classList.add("hidden");
+                }
+            });
+        });
+    });
+});
