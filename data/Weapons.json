@@ -5,7 +5,7 @@
       {
         "unique_id" : "makarov",
         "name": "Makarov",
-        "type": "HighTech",
+        "type": "Secondary",
         "ammo": "9x18mm",
         "skill" : "Crafting",
         "level": 5,
@@ -27,7 +27,7 @@
       {
         "unique_id" : "m1911",
         "name": "M1911",
-        "type": "Blueprint",
+        "type": "Secondary",
         "ammo": ".45 ACP",
         "skill" : "Crafting",
         "level": 12,
