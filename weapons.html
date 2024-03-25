@@ -51,12 +51,12 @@
                 <hr class="my-4 border-gray-300 dark:border-gray-700">
                 <ul class="grid grid-cols-1 gap-3">
                     <li>
-                        <input type="checkbox" name="Secondary" id="Secondary" class="category mr-2 w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" checked>
-                        <label for="Secondary" class="text-gray-700 dark:text-gray-300"><b class="text-blue-600 dark:text-blue-500">Primary</b> Weapons.</label>
+                        <input type="checkbox" name="Primary" id="Primary" class="category mr-2 w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" checked>
+                        <label for="Primary" class="text-gray-700 dark:text-gray-300"><b class="text-orange-600 dark:text-orange-500">Primary</b> Weapons.</label>
                     </li>
                     <li>
-                        <input type="checkbox" name="Primary" id="Primary" class="category mr-2 w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" checked>
-                        <label for="Primary" class="text-gray-700 dark:text-gray-300"><b class="text-orange-600 dark:text-orange-500">Secondary</b> Weapons.</label>
+                        <input type="checkbox" name="Secondary" id="Secondary" class="category mr-2 w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" checked>
+                        <label for="Secondary" class="text-gray-700 dark:text-gray-300"><b class="text-blue-600 dark:text-blue-500">Secondary</b> Weapons.</label>
                     </li>
                     <li>
                         <input type="checkbox" name="Melee" id="Melee" class="category mr-2 w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" checked>
@@ -80,13 +80,7 @@
                 <div class="bg-gray-200 dark:bg-gray-700 rounded-lg p-6 grid grid-cols-1 md:grid-cols-3 gap-6 mb-4">
                     <input type="text"
                         class="bg-gray-300 dark:bg-gray-600 rounded-lg p-2 w-full text-gray-700 dark:text-gray-300"
-                        placeholder="Search...">
-                    <button
-                        class="bg-gray-300 dark:bg-gray-600 dark:hover:bg-gray-500 hover:bg-gray-400 rounded-lg p-2 w-full text-gray-700 dark:text-gray-300">Search
-                        Item</button>
-                    <button
-                        class="bg-gray-300 dark:bg-gray-600 dark:hover:bg-gray-500 hover:bg-gray-400 rounded-lg p-2 w-full text-gray-700 dark:text-gray-300">Reset
-                        Search</button>
+                        id="search" name="search" placeholder="Search...">
                 </div>
                 <div class="bg-gray-200 dark:bg-gray-700 rounded-lg p-6 grid grid-cols-1 md:grid-cols-3 gap-6"
                     id="weapon-list">
@@ -97,7 +91,6 @@
         </div>
 
     </main>
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script src="/scripts/Monoforge.js"></script>
