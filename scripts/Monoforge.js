@@ -35,25 +35,23 @@ function WeaponTypeCSS(type) {
   }
 }
 
-weapons = fetch("data/Weapons.json")
+let amount = 0;
+
+// Load weapons data and populate the page
+fetch("data/Weapons.json")
   .then((response) => response.json())
   .then((data) => {
     data[0].section_items.forEach((element) => {
       let item_html = `
-        <div class="bg-gray-300 dark:bg-gray-600 dark:hover:bg-gray-500 hover:bg-gray-400 rounded-lg p-6 flex items-center justify-center space-x-4 cursor-pointer" data-weapon-name="${
-          element.name
-        }" data-weapon-type="${element.type}">
-         <img src="./assets/Weapons/${element.unique_id}.png" alt="${
-        element.name
-      }" class="lines p-2 w-16 h-16 ${WeaponTypeCSS(
-        element.type
-      )}">
-         <h2 class="text-2xl font-bold my-4">${element.name}</h2>
+        <div class="bg-gray-300 dark:bg-gray-600 dark:hover:bg-gray-500 hover:bg-gray-400 rounded-lg p-6 flex items-center justify-center space-x-4 cursor-pointer" data-weapon-name="${element.name}" data-weapon-type="${element.type}">
+          <img src="./assets/Weapons/${element.unique_id}.png" alt="${element.name}" class="lines p-2 w-16 h-16 ${WeaponTypeCSS(element.type)}">
+          <h2 class="text-2xl font-bold my-4">${element.name}</h2>
         </div>`;
 
-      document
-        .querySelector("#weapon-list")
-        .insertAdjacentHTML("beforeend", item_html);
+      document.querySelector("#weapon-list").insertAdjacentHTML("beforeend", item_html);
+
+      amount++;
+      document.getElementById("weapon-count").innerHTML = amount;
     });
   })
   .catch((error) => console.error(error));
@@ -71,6 +69,8 @@ document.addEventListener("DOMContentLoaded", function () {
       .filter((checkbox) => checkbox.checked)
       .map((checkbox) => checkbox.name);
 
+    let filteredAmount = 0;
+
     weapons.forEach(function (weapon) {
       const weaponType = weapon.dataset.weaponType;
       const weaponName = weapon.dataset.weaponName.toLowerCase();
@@ -82,10 +82,13 @@ document.addEventListener("DOMContentLoaded", function () {
           selectedCategories.includes(weaponType))
       ) {
         weapon.classList.remove("hidden");
+        filteredAmount++;
       } else {
         weapon.classList.add("hidden");
       }
     });
+
+    document.getElementById("weapon-count").innerHTML = filteredAmount;
   }
 
   // Event listener for search bar input
