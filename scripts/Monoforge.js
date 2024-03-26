@@ -43,7 +43,7 @@ fetch("data/Weapons.json")
   .then((data) => {
     data[0].section_items.forEach((element) => {
       let item_html = `
-      <div class="bg-gray-200 dark:bg-gray-800 rounded-lg p-6 mb-4 text-gray-200 dark:text-gray-300 items-center text-center ${WeaponTypeCSS(element.type)}" data-weapon-type="${element.type}" data-weapon-name="${element.name}">
+      <div class="bg-gray-200 dark:bg-gray-800 rounded-lg p-6 mb-4 text-gray-200 dark:text-gray-300 items-center text-center ${WeaponTypeCSS(element.type)}" data-weapon-type="${element.type}" data-weapon-name="${element.name}" data-weapon-unique-id="${element.unique_id}">
         <h2 class="text-2xl font-bold mb-4 text-center">${element.name}</h2>
         <img src="/assets/Weapons/${element.unique_id}.png" alt="${element.name}" class="w-32 h-32 mx-auto mb-4">
         <span class="text-xl font-bold mb-4 text-center">Lvl: ${element.skill} ${element.level}</span>
