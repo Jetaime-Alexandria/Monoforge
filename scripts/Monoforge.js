@@ -51,6 +51,10 @@ fetch("data/Weapons.json")
 
       document.querySelector("#weapon-list").insertAdjacentHTML("beforeend", item_html);
 
+      document.querySelector(`[data-weapon-unique-id="${element.unique_id}"]`).addEventListener("click", function () {
+        window.location.href = `./view-weapon.html?id=${element.unique_id}`;
+      });
+
       amount++;
       document.getElementById("weapon-count").innerHTML = amount;
     });
