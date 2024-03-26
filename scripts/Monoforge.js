@@ -3,34 +3,34 @@ let weapons;
 function WeaponTypeCSS(type) {
   switch (type) {
     case "Primary":
-      return "bg-orange-500 hover:bg-orange-600 dark:bg-orange-900 dark:hover:bg-orange-700 outline outline-3 outline-orange-500 dark:outline-orange-900 drop-on-death";
+      return "bg-orange-500 hover:bg-orange-600 dark:bg-orange-900 dark:hover:bg-orange-700 outline outline-4 outline-orange-500 dark:outline-orange-900 drop-on-death";
       break;
 
     case "Secondary":
-      return "bg-blue-500 hover:bg-blue-600 dark:bg-blue-900 dark:hover:bg-blue-700 outline outline-3 outline-blue-500 dark:outline-blue-900 drop-on-death";
+      return "bg-blue-500 hover:bg-blue-600 dark:bg-blue-900 dark:hover:bg-blue-700 outline outline-4 outline-blue-500 dark:outline-blue-900 drop-on-death";
       break;
 
     case "Melee":
-      return "bg-red-500 hover:bg-red-700 dark:bg-red-900 dark:hover:bg-red-600 outline outline-3 outline-red-500 dark:outline-red-900 drop-on-death";
+      return "bg-red-500 hover:bg-red-700 dark:bg-red-900 dark:hover:bg-red-600 outline outline-4 outline-red-500 dark:outline-red-900 drop-on-death";
       break;
 
     case 'Melee2':
-      return "bg-red-500 hover:bg-red-700 dark:bg-red-900 dark:hover:bg-red-600 outline outline-3 outline-red-500 dark:outline-red-800";
+      return "bg-red-500 hover:bg-red-700 dark:bg-red-900 dark:hover:bg-red-600 outline outline-4 outline-red-500 dark:outline-red-800";
       break;
 
     case 'Blueprint':
-      return "bg-blue-300 hover:bg-blue-400 outline outline-3 outline-blue-500 hover:outline-blue-600  blueprint";
+      return "bg-blue-300 hover:bg-blue-400 outline outline-4 outline-blue-500 hover:outline-blue-600  blueprint";
       break;
 
     case 'HighTech':
-      return "bg-yellow-500 hover:bg-yellow-700 dark:bg-yellow-900 dark:hover:bg-yellow-600 outline outline-3 outline-yellow-500 dark:outline-yellow-800 drop-on-death";
+      return "bg-yellow-500 hover:bg-yellow-700 dark:bg-yellow-900 dark:hover:bg-yellow-600 outline outline-4 outline-yellow-500 dark:outline-yellow-800 drop-on-death";
       break;
 
     case 'Exotics':
       break;
 
     default:
-      return "bg-gray-500 hover:bg-gray-600 outline outline-3 outline-gray-700";
+      return "bg-gray-500 hover:bg-gray-600 outline outline-4 outline-gray-700";
       break;
   }
 }
@@ -43,9 +43,10 @@ fetch("data/Weapons.json")
   .then((data) => {
     data[0].section_items.forEach((element) => {
       let item_html = `
-        <div class="bg-gray-300 dark:bg-gray-600 dark:hover:bg-gray-500 hover:bg-gray-400 rounded-lg p-6 flex items-center justify-center space-x-4 cursor-pointer" data-weapon-name="${element.name}" data-weapon-type="${element.type}">
-          <img src="./assets/Weapons/${element.unique_id}.png" alt="${element.name}" class="lines p-2 w-16 h-16 ${WeaponTypeCSS(element.type)}">
-          <h2 class="text-2xl font-bold my-4">${element.name}</h2>
+      <div class="bg-gray-200 dark:bg-gray-800 rounded-lg p-6 mb-4 text-gray-200 dark:text-gray-300 items-center text-center ${WeaponTypeCSS(element.type)}" data-weapon-type="${element.type}" data-weapon-name="${element.name}">
+        <h2 class="text-2xl font-bold mb-4 text-center">${element.name}</h2>
+        <img src="/assets/Weapons/${element.unique_id}.png" alt="${element.name}" class="w-32 h-32 mx-auto mb-4">
+        <span class="text-xl font-bold mb-4 text-center">Lvl: ${element.skill} ${element.level}</span>
         </div>`;
 
       document.querySelector("#weapon-list").insertAdjacentHTML("beforeend", item_html);
