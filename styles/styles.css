@@ -1,0 +1,23 @@
+.weapon-list {
+    display: none;
+}
+
+.category:checked~.weapon-list {
+    display: block;
+}
+
+.drop-on-death {
+    background-image: url('../assets/strike-through.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+}
+
+.blueprint {
+    background-image: url('../assets/blueprint.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+}
