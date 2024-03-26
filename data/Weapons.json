@@ -3,6 +3,41 @@
     "section_name": "Weapons",
     "section_items": [
       {
+        "unique_id" : "unicorn",
+        "name": "Unicorn",
+        "type": "Blueprint",
+        "ammo": "Rainbows",
+        "skill" : "Elite Crafting",
+        "level": 9000,
+        "ingredients": [
+          {
+            "name": "Pink Dye",
+            "amount": 1
+          },
+          {
+            "name": "Marbles",
+            "amount": 2
+          },
+          {
+            "name": "Saddle",
+            "amount": 1
+          },
+          {
+            "name": "Horn",
+            "amount": 1
+          }
+        ],
+        "details": {
+          "about" : "Unicorns are very friendly creatures but they also have very powerful weapons",
+          "stats" : {
+            "damage" : 9000,
+            "durability" : 9000,
+            "recoil" : "None",
+            "obtainability" : ["Member of Unicorn Elite Forces"]
+          }
+        }
+      },
+      {
         "unique_id" : "makarov",
         "name": "Makarov",
         "type": "Secondary",
