@@ -23,9 +23,9 @@
 
     <main class="container mx-auto my-8">
 
-        <div class="bg-gray-300 dark:bg-gray-800 rounded-lg p-6 mb-4 outline outline-1 outline-yellow-600 text-yellow-700 dark:outline-yellow-300 dark:text-yellow-300">
+        <!-- <div class="bg-gray-300 dark:bg-gray-800 rounded-lg p-6 mb-4 outline outline-1 outline-yellow-600 text-yellow-700 dark:outline-yellow-300 dark:text-yellow-300">
             <i class="fas fa-warning"></i> This project was released early and is still in development, this page may change in the future.
-        </div>
+        </div> -->
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
@@ -34,36 +34,52 @@
                 <hr class="my-4 border-gray-300 dark:border-gray-700">
                 <ul class="grid grid-cols-1 gap-3">
                     <li>
-                        <span class="text-gray-700 dark:text-gray-300"><b>Guns</b></span>
+                        <span class="text-gray-700 dark:text-gray-300"><b>Categories</b></span><br>
+                        <span class="text-gray-700 dark:text-gray-300 text-sm">Filter out the items you don't want to see.</span>
                     </li>
                     <li>
                         <input type="checkbox" name="Primary" id="Primary" class="category mr-2 w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" checked>
-                        <label for="Primary" class="text-gray-700 dark:text-gray-300"><b class="text-orange-600 dark:text-orange-500">Primary</b></label>
+                        <label for="Primary" class="text-gray-700 dark:text-gray-300"><b class="text-orange-600 dark:text-orange-500">Primary Guns</b></label>
                     </li>
                     <li>
                         <input type="checkbox" name="Secondary" id="Secondary" class="category mr-2 w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" checked>
-                        <label for="Secondary" class="text-gray-700 dark:text-gray-300"><b class="text-blue-600 dark:text-blue-500">Secondary</b></label>
+                        <label for="Secondary" class="text-gray-700 dark:text-gray-300"><b class="text-blue-600 dark:text-blue-500">Secondary Guns</b></label>
                     </li>
                     <li>
                         <input type="checkbox" name="Melee" id="Melee" class="category mr-2 w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" checked>
-                        <label for="Melee" class="text-gray-700 dark:text-gray-300"><b class="text-red-600 dark:text-red-500">Melee</b></label>
+                        <label for="Melee" class="text-gray-700 dark:text-gray-300"><b class="text-red-600 dark:text-red-500">Melee Weapons</b></label>
                     </li>
                     <li>
                         <input type="checkbox" name="Blueprint" id="Blueprint" class="category mr-2 w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" checked>
-                        <label for="Blueprint" class="text-gray-700 dark:text-gray-300"><b class="text-blue-700 dark:text-blue-300"><i class="fas fa-scroll"></i> Blueprint</b></label>
+                        <label for="Blueprint" class="text-gray-700 dark:text-gray-300"><b class="text-blue-700 dark:text-blue-300">Blueprint Items</b></label>
                     </li>
                     <li>
                         <input type="checkbox" name="HighTech" id="HighTech" class="category mr-2 w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" checked>
-                        <label for="HighTech" class="text-gray-700 dark:text-gray-300"><b class="text-yellow-700 dark:text-yellow-400"><i class="fas fa-wrench"></i> High-Tech</b></label>
+                        <label for="HighTech" class="text-gray-700 dark:text-gray-300"><b class="text-yellow-700 dark:text-yellow-400">High-Tech Items</b></label>
                     </li>
                     <li>
-                        <b class="text-gray-700 dark:text-gray-300">Attachments</b>
+                        <input type="checkbox" name="Equipment" id="Equipment" class="category mr-2 w-4 h-4 text-gray-600 bg-gray-100 rounded border-gray-300 focus:ring-gray-500 dark:focus:ring-gray-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="Equipment" class="text-gray-700 dark:text-gray-300"><b class="text-gray-700 dark:text-gray-400"><i class="fas fa-box-open"></i> Equipment</b></label>
                     </li>
                     <li>
-                        <b class="text-gray-700 dark:text-gray-300">Items</b>
+                        <input type="checkbox" name="Attachments" id="Attachments" class="category mr-2 w-4 h-4 text-gray-600 bg-gray-100 rounded border-gray-300 focus:ring-gray-500 dark:focus:ring-gray-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="Attachments" class="text-gray-700 dark:text-gray-300"><b class="text-gray-700 dark:text-gray-400"><i class="fas fa-box-open"></i> Weapon Attachments</b></label>
                     </li>
                     <li>
-                        <b class="text-gray-700 dark:text-gray-300">Materials</b>
+                        <input type="checkbox" name="Tools" id="Tools" class="category mr-2 w-4 h-4 text-gray-600 bg-gray-100 rounded border-gray-300 focus:ring-gray-500 dark:focus:ring-gray-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="Tools" class="text-gray-700 dark:text-gray-300"><b class="text-gray-700 dark:text-gray-400"><i class="fas fa-box-open"></i> Tools</b></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="Materials" id="Materials" class="category mr-2 w-4 h-4 text-gray-600 bg-gray-100 rounded border-gray-300 focus:ring-gray-500 dark:focus:ring-gray-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="Materials" class="text-gray-700 dark:text-gray-300"><b class="text-gray-700 dark:text-gray-400"><i class="fas fa-box-open"></i> Materials</b></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="Weapon Ammo" id="Weapon Ammo" class="category mr-2 w-4 h-4 text-gray-600 bg-gray-100 rounded border-gray-300 focus:ring-gray-500 dark:focus:ring-gray-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="Weapon Ammo" class="text-gray-700 dark:text-gray-300"><b class="text-gray-700 dark:text-gray-400"><i class="fas fa-box-open"></i> Weapon Ammo</b></label>
+                    </li>
+                    <li>
+                        <button type="button" id="check-all" class="text-blue-700 dark:text-blue-300 p-2"><i class="fas fa-circle-check"></i> Check all Categories</button><br>
+                        <button type="button" id="uncheck-all" class="text-red-700 dark:text-red-300 p-2"><i class="fas fa-circle"></i> Uncheck all Categories</button>
                     </li>
                 </ul>
                 <hr class="my-4 border-gray-300 dark:border-gray-700">
@@ -85,14 +101,16 @@
                 <div class="bg-gray-200 dark:bg-gray-700 rounded-lg p-6 grid grid-cols-1 md:grid-cols-3 gap-6 overflow-y-auto" id="result-list" style="max-height: 27em;">
 
                 </div>
+
+                <div class="mt-4 text-center">
+                    <span class="text-dark dark:text-gray-500 cursor-default text-sm"><i class="fas fa-warning"></i> Monoforge uses actual images for the items and may contain slight differences to the in-game item.</span> <br>
+                </div>
             </div>
 
 
         </div>
 
-        <div class="mt-4 text-center">
-            <span class="text-dark dark:text-gray-500 cursor-default text-sm"><i class="fas fa-warning"></i> Monoforge uses actual images for the items and may contain slight differences to the in-game item.</span>
-        </div>
+
     </main>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
