@@ -1,0 +1,238 @@
+[
+    {
+        "section_name" : "Attachments",
+        "section_items" : [
+            {
+                "unique_id": "short_blade",
+                "name": "Short Blade",
+                "skill": "Unknown",
+                "level": 10,
+                "ingredients": []
+            },
+            {
+                "unique_id": "tundra_9mm_barrel",
+                "name": "Tundra 9MM Barrel",
+                "skill": "Unknown",
+                "level": 12,
+                "ingredients": []
+            },
+            {
+                "unique_id": "m2_pistol_suppressor",
+                "name": "M2 Pistol Suppressor",
+                "skill": "Unknown",
+                "level": 18,
+                "ingredients": []
+            },
+            {
+                "unique_id": "unfolded_stock",
+                "name": "Unfolded Stock",
+                "skill": "Unknown",
+                "level": 20,
+                "ingredients": []
+            },
+            {
+                "unique_id": "mp5_suppressor",
+                "name": "MP5 Suppressor",
+                "skill": "Unknown",
+                "level": 20,
+                "ingredients": []
+            },
+            {
+                "unique_id": "long_barrel_mr96",
+                "name": "Long Barrel MR96",
+                "skill": "Unknown",
+                "level": 20,
+                "ingredients": []
+            },
+            {
+                "unique_id": "extended_9mm_barrel",
+                "name": "Extended 9MM Barrel",
+                "skill": "Unknown",
+                "level": 20,
+                "ingredients": []
+            },
+            {
+                "unique_id": "eotech_552",
+                "name": "EoTech 552",
+                "skill": "Unknown",
+                "level": 20,
+                "ingredients": []
+            },
+            {
+                "unique_id": "mp5_retractable_stock",
+                "name": "MP5 Retractable Stock",
+                "skill": "Unknown",
+                "level": 20,
+                "ingredients": []
+            },
+            {
+                "unique_id": "ak-74_heavy_stock",
+                "name": "AK-74 Heavy Stock",
+                "skill": "Unknown",
+                "level": 25,
+                "ingredients": []
+            },
+            {
+                "unique_id": "ak-74_shortened_barrel",
+                "name": "AK-74 Shortened Barrel",
+                "skill": "Unknown",
+                "level": 25,
+                "ingredients": []
+            },
+            {
+                "unique_id": "ak-74_foldable_stock",
+                "name": "AK-74 Foldable Stock",
+                "skill": "Unknown",
+                "level": 25,
+                "ingredients": []
+            },
+            {
+                "unique_id": "bowie_blade",
+                "name": "Bowie Blade",
+                "skill": "Unknown",
+                "level": 25,
+                "ingredients": []
+            },
+            {
+                "unique_id": "pso-1",
+                "name": "PSO-1",
+                "skill": "Unknown",
+                "level": 25,
+                "ingredients": []
+            },
+            {
+                "unique_id": "pbs-1_barrel",
+                "name": "PBS-1 Barrel",
+                "skill": "Unknown",
+                "level": 25,
+                "ingredients": []
+            },
+            {
+                "unique_id": "ak-74_rpk_magazine",
+                "name": "AK-74 RPK Magazine",
+                "skill": "Unknown",
+                "level": 25,
+                "ingredients": []
+            },
+            {
+                "unique_id": "ak-74_rpk",
+                "name": "AK-74 RPK",
+                "skill": "Unknown",
+                "level": 25,
+                "ingredients": []
+            },
+            {
+                "unique_id": "x2-lam",
+                "name": "X2-LAM",
+                "skill": "Unknown",
+                "level": 30,
+                "ingredients": []
+            },
+            {
+                "unique_id": "kobra_sight",
+                "name": "Kobra Sight",
+                "skill": "Unknown",
+                "level": 30,
+                "ingredients": []
+            },
+            {
+                "unique_id": "foregrip",
+                "name": "Foregrip",
+                "skill": "Unknown",
+                "level": 30,
+                "ingredients": []
+            },
+            {
+                "unique_id": "magpul_handguard",
+                "name": "Magpul Handguard",
+                "skill": "Unknown",
+                "level": 30,
+                "ingredients": []
+            },
+            {
+                "unique_id": "match_grade_ammo_type",
+                "name": "Match Grade Ammo Type",
+                "skill": "Unknown",
+                "level": 30,
+                "ingredients": []
+            },
+            {
+                "unique_id": "ext_ris",
+                "name": "EXT RIS",
+                "skill": "Unknown",
+                "level": 30,
+                "ingredients": []
+            },
+            {
+                "unique_id": "aimpoint_sight",
+                "name": "Aimpoint Sight",
+                "skill": "Unknown",
+                "level": 30,
+                "ingredients": []
+            },
+            {
+                "unique_id": "ar-15_heavy_stock",
+                "name": "AR-15 Heavy Stock",
+                "skill": "Unknown",
+                "level": 30,
+                "ingredients": []
+            },
+            {
+                "unique_id": "short_dot_sight",
+                "name": "Short Dot Sight",
+                "skill": "Unknown",
+                "level": 30,
+                "ingredients": []
+            },
+            {
+                "unique_id": "ar-15_quad_magazine",
+                "name": "AR-15 QUAD Magazine",
+                "skill": "Unknown",
+                "level": 30,
+                "ingredients": []
+            },
+            {
+                "unique_id": "m-ti_sights",
+                "name": "M-TI Sights",
+                "skill": "Unknown",
+                "level": 30,
+                "ingredients": []
+            },
+            {
+                "unique_id": "acog_sights",
+                "name": "ACOG Sights",
+                "skill": "Unknown",
+                "level": 30,
+                "ingredients": []
+            },
+            {
+                "unique_id": "backup_ironsights",
+                "name": "Backup Ironsights",
+                "skill": "Unknown",
+                "level": 30,
+                "ingredients": []
+            },
+            {
+                "unique_id": "long_barrel",
+                "name": "Long Barrel",
+                "skill": "Unknown",
+                "level": 30,
+                "ingredients": []
+            },
+            {
+                "unique_id": "saker_suppressor",
+                "name": "SAKER Suppressor",
+                "skill": "Unknown",
+                "level": 30,
+                "ingredients": []
+            },
+            {
+                "unique_id": "an/peq-15",
+                "name": "AN/PEQ-15",
+                "skill": "Unknown",
+                "level": 30,
+                "ingredients": []
+            }
+        ]
+    }
+]
