@@ -1,0 +1,42 @@
+[
+    {
+        "section_name" : "Ammo",
+        "section_items" : [
+            {
+                "unique_id" : "pistol_ammo",
+                "name" : "Pistol Ammo",
+                "skill" : "Metalworking",
+                "level" : 14,
+                "ingredients" : []
+            },
+            {
+                "unique_id" : "rifle_ammo",
+                "name" : "Rifle Ammo",
+                "skill" : "Metalworking",
+                "level" : 44,
+                "ingredients" : []
+            },
+            {
+                "unique_id" : "shotgun_ammo",
+                "name" : "Shotgun Ammo",
+                "skill" : "Metalworking",
+                "level" : 32,
+                "ingredients" : []
+            },
+            {
+                "unique_id" : "sniper_ammo",
+                "name" : "Sniper Ammo",
+                "skill" : "Metalworking",
+                "level" : 36,
+                "ingredients" : []
+            },
+            {
+                "unique_id" : "grenade_launcher_ammo",
+                "name" : "Grenade Launcher Ammo",
+                "skill" : "Metalworking",
+                "level" : 99,
+                "ingredients" : []
+            }
+        ]
+    }
+]
